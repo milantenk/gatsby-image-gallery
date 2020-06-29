@@ -4,6 +4,8 @@ jobs:
   include:
     - stage: test
       name: Jest
+      install:
+        - npm i -g yarn
       script:
         - yarn workspace @browniebroke/gatsby-image-gallery test
     - name: ESlint
